@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não esqueça de pegar!"
+        android:textSize="30dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cbArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinicio"
+        android:layout_marginTop="15dp"
+        android:text="Arroz (R$ 2,69) "
+        android:textSize="30dp"
+        />
+    <CheckBox
+        android:id="@+id/cbLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbArroz"
+        android:layout_marginTop="15dp"
+        android:text="Leite (R$ 5,00) "
+        android:textSize="30dp"
+        />
+    <CheckBox
+        android:id="@+id/cbCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbLeite"
+        android:layout_marginTop="15dp"
+        android:text="Carne (R$ 10,00) "
+        android:textSize="30dp"
+        />
+    <CheckBox
+        android:id="@+id/cbFeijao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbCarne"
+        android:layout_marginTop="15dp"
+        android:text="Feijão (R$ 2,30) "
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/btntotal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbFeijao"
+        android:layout_marginLeft="40dp"
+        android:text="Total de compras "
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+</RelativeLayout>
